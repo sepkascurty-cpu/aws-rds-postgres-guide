@@ -1,6 +1,7 @@
 # AWS RDS PostgreSQL Guide — Production-Ready Relational Databases, Done Right
 
 ![AWS](https://img.shields.io/badge/AWS-RDS%20PostgreSQL-FF9900?style=for-the-badge&logo=amazonaws)
+![Postgres](https://img.shields.io/badge/PostgreSQL-16-336791?style=for-the-badge&logo=postgresql)
 ![Terraform](https://img.shields.io/badge/IaC-Terraform-7B42BC?style=for-the-badge&logo=terraform)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Level](https://img.shields.io/badge/Level-Intermediate-blue?style=for-the-badge)
