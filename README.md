@@ -15,6 +15,10 @@
 > and add **read replicas only when reads are your bottleneck** — a replica
 > is not a backup, and Multi-AZ is not a read scale-out.
 
+## 🌍 In plain words — what is this, really?
+
+Imagine keeping your shop's most important record book — every sale, customer, and payment — and needing it to be safe, readable, and available every single day. You could guard and maintain that book yourself, making your own backup copies and staying up all night if something went wrong. Or you could hire a trusted records office that stores the book securely, copies it, backs it up, and hands you a clean replacement if the original is damaged. RDS is that records office for a PostgreSQL database: AWS runs, patches, and backs up the database engine for you. You still decide what data goes in and who may read it, using the technical controls in this guide such as Multi-AZ, backups, RDS Proxy, and Secrets Manager.
+
 ## Why managed, and when *not*
 
 You *can* install PostgreSQL on EC2. You then own: OS patching, WAL
@@ -151,10 +155,6 @@ terraform apply tfplan
 # connect through the proxy endpoint (from the app subnet / VPN only):
 psql "host=$(terraform output -raw proxy_endpoint) port=5432 dbname=appdb user=app_user sslmode=require"
 ```
-
-## Quiz
-
-Think you got it? [Take the 5-question quiz →](quiz.md)
 
 ## Further reading
 
